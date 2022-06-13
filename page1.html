@@ -52,7 +52,24 @@
             <h5>ユウキ(CV：悠木碧)</h5>
             <p>マザーズ・ロザリオ編のヒロイン。ALOにおいて「絶剣（ぜっけん）」と呼ばれ圧倒的な戦闘力を誇るプレイヤー。
                 ギルド「スリーピング・ナイツ」のリーダー。ALOでの辻デュエルでアスナと出会いその強さを認め、ボス攻略戦の助っ人を依頼した。
-                <br><a href="page2.html"><img src="img/yuuki5.png" alt="ユウキ" style="display: block; margin: auto;"></a><br><br><p>↓リンク</p>
+                <br><a href="page2.html">
+                        <img  id="mypic"  onclick="slideshow()" src="img/yuuki5.png" alt="ユウキ" style="display: block; margin: auto;">
+                            <script>
+                            var pics_src = new Array("img/yuuki5.png","img/yuuki2.png","img/yuuki3.png");
+                            var num = 0;
+                
+                            function slideshow(){
+                                if (num == 2) {
+                                    num = 0;
+                                }
+                                else {
+                                    num ++;
+                                }
+                                document.getElementById("mypic").src=pics_src[num];
+                            }
+                            </script>
+                    </a>
+                <br><br><p>↓リンク</p>
                 <a href="page2.html">キャラ紹介(ユウキのみ)</a></p>
             <br>
             <a href="index.html">TOPページに戻る</a>
