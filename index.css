@@ -2,6 +2,14 @@ p{font-size:20px;color:rgb(0, 0, 0);}
 a{text-decoration:none;color:rgb(0, 0, 0);}
 h1{text-align:center;font-size:40px;color:rgb(0, 0, 0);}
 h2,h3{font-size:30px;color:rgb(0, 0, 0);background-color: rgb(214, 214, 214);}
+h2:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #5472cd;
+  bottom: -3px;
+  width: 20%;
+}
 font{font-size: 30px;}
 body{background-color: rgb(255, 255, 255);}
 footer {
