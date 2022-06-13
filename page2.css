@@ -1,0 +1,22 @@
+p{font-size:20px;color:rgb(253, 253, 253);}
+h1{text-align:center;font-size:40px;color:rgb(0, 0, 0);}
+a{text-decoration:none;color:rgb(252, 252, 252);}
+font{font-size: 30px;}
+body{background-color: rgba(136,72,152,0.7);}
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(151, 30, 135);
+    align-items: center;
+  }
+   
+  .title {
+    margin-right: auto;
+  }
+   
+  .menu-item {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+  }
