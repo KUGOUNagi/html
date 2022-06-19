@@ -5,6 +5,14 @@
         <title> ライトノベル</title>
         <link rel="stylesheet" href="index.css">
     </head>
+    <script>
+        window.onload = function() {
+          setInterval(function() {
+            var dd = new Date();
+            document.getElementById("T1").innerHTML = dd.toLocaleString();
+          }, 1000);
+        }
+        </script>
     <body>
         <h1><a href="index.html">ライトノベル紹介サイト</a></h1>
         <header>
@@ -51,12 +59,25 @@
             あらすじや細かい説明は各書籍紹介でしているのでぜひ見てください。<br>
             <a href="https://mfbunkoj.jp/"><img src="img/nogame.jpg" alt="ノゲノラ"  style="display: block; margin: auto;"></a>
         </p>
+        <form method="post" action="../html/page2.html" onSubmit="return checkSubmit()">
+            <input type="text" name="text1" value="データを送信します">
+            <input type="submit" value="送信する">
+            <input type="reset" value="クリア">
+            </form>
+            
+            <script type="text/javascript">
+            function checkSubmit() {
+                return confirm("送信しても良いですか？");
+            }
+            </script>
         <footer>
             <ul class="footer-menu">
                 <li><a href="page1.html">電撃文庫</a></li>
                 <li><a href="https://mfbunkoj.jp/">MF文庫J</a></li>
                 <li><a href="https://sneakerbunko.jp/">角川スニーカー文庫</a></li>
                 <li><a href="https://gagagabunko.jp/">ガガガ文庫</a></li>
+                <li><a href="https://ga.sbcr.jp/">GA文庫</a></li>
+                <br><div id="T1"></div>
                </ul>
         </footer>
     </body>

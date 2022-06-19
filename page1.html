@@ -5,6 +5,14 @@
         <title> 電撃文庫</title>
         <link rel="stylesheet" href="page1.css">
     </head>
+    <script>
+        window.onload = function() {
+          setInterval(function() {
+            var dd = new Date();
+            document.getElementById("T1").innerHTML = dd.toLocaleString();
+          }, 1000);
+        }
+        </script>
     <body>
         <h1><a href="index.html">ライトノベル紹介サイト</a></h1>
         <header>
@@ -74,6 +82,17 @@
                 <br><br><p>↓リンク</p>
                 <a href="page2.html">キャラ紹介(ユウキのみ)</a></p>
             <br>
+            <form method="post" action="../html/page2.html" onSubmit="return checkSubmit()">
+                <input type="text" name="text1" value="データを送信します">
+                <input type="submit" value="送信する">
+                <input type="reset" value="クリア">
+                </form>
+                
+                <script type="text/javascript">
+                function checkSubmit() {
+                    return confirm("送信しても良いですか？");
+                }
+                </script>
             <a href="index.html">TOPページに戻る</a>
             <footer>
                 <ul class="footer-menu">
@@ -81,6 +100,8 @@
                     <li><a href="https://mfbunkoj.jp/">MF文庫J</a></li>
                     <li><a href="https://sneakerbunko.jp/">角川スニーカー文庫</a></li>
                     <li><a href="https://gagagabunko.jp/">ガガガ文庫</a></li>
+                    <li><a href="https://ga.sbcr.jp/">GA文庫</a></li>
+                    <br><div id="T1"></div>
                    </ul>
             </footer>
     </body>
